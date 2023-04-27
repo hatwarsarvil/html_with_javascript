@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head> <title> Calculator Program  </title> 
+
+</head>
+
+<body>
+<script>
+
+function add()
+{
+var v1,v2,v3;
+
+v1=parseInt (f1.val1.value);
+v2=parseInt (f1.val2.value);
+v3= v1+v2;
+
+
+document.getElementById("cal_1").innerHTML = "<h3> Addition Is :  " +v3;
+}
+
+function sub()
+{
+var v1,v2,v3;
+
+v1=parseInt (f1.val1.value);
+v2=parseInt (f1.val2.value);
+v3= v1-v2;
+
+document.getElementById("cal_1").innerHTML = "<h3> Substraction Is :  " +v3;
+}
+
+function multi()
+{
+var v1,v2,v3;
+
+v1=parseInt (f1.val1.value);
+v2=parseInt (f1.val2.value);
+v3= v1*v2;
+
+document.getElementById("cal_1").innerHTML = "<h3> Multiplication Is :  " +v3;
+}
+
+function div()
+{
+var v1,v2,v3;
+
+v1=parseInt (f1.val1.value);
+v2=parseInt (f1.val2.value);
+v3= v1/v2;
+
+document.getElementById("cal_1").innerHTML = "<h3> Division Is :  " +v3;
+}
+</script>
+
+ <center><div style="background-color: aqua; height: 400px; width: 30%; margin-top: 10%; padding: 2%;">
+<form name="f1">
+
+<h1> Enter the first value : </h1> 
+<input type="text" name="val1"/>
+
+<h1> Enter the second value : </h1> 
+<input type="text" name="val2"/>
+
+<br/><br/> <input type="button" value="+" onclick="add()" style="padding: 2%;"/>
+<input type="button" value="-" onclick="sub()" style="padding: 2%;"/>
+<input type="button" value="*" onclick="multi()" style="padding: 2%;"/>
+<input type="button" value="/" onclick="div()" style="padding: 2%;"/>
+     
+    
+    <h1 id="cal_1"></h1>
+    
+</form>
+</div> </center>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
